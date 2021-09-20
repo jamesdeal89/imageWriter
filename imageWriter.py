@@ -23,7 +23,7 @@ class CreateImage():
                 for colour in collum:
                     # writes the colour to the file and seperates with a space.
                     f.write(str(colour) + " ")
-                    print(".")
+                    print("-", end="")
                 # seperates each set of colours.
                 f.write(" ")
             # creates a new line for each row of pixel data.
