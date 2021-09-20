@@ -23,6 +23,7 @@ class CreateImage():
                 for colour in collum:
                     # writes the colour to the file and seperates with a space.
                     f.write(str(colour) + " ")
+                    print(".")
                 # seperates each set of colours.
                 f.write(" ")
             # creates a new line for each row of pixel data.
@@ -46,7 +47,7 @@ class CreateImage():
         # save an individual pixel
         # red, green, blue, alpha values
 
-Image1 = CreateImage("testImage1.ppm",5,5)
+Image1 = CreateImage("testImage1.ppm",360,480)
 Image1.generateRandom()
 Image1.save()
 
